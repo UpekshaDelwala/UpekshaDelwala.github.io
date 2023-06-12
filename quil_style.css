@@ -1,0 +1,427 @@
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: 1px solid #e7e7e7;
+  background-color: #ffcce6;
+  height: 58px;
+  font-size: 18px;
+}
+
+ul.topnav li{
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 60px;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+ul.topnav li a.active, .btn:hover{
+  color: white;
+  background-color:#cc0066;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  .topnav li a{
+  	float: none;
+    width: 100%;}
+}
+
+
+
+..flex-container_home > div {
+ width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-row {
+  display: flex;
+}
+
+.column {
+  flex-basis: 50%
+}
+
+#column_r{
+	background-color: ;
+    
+}
+
+h1.small {
+  line-height: 0.7;
+}
+
+.header {
+      margin-bottom: 5px;
+    }
+    
+    .header #h1_1 {
+      text-align: center;	
+      font-size: 80px;
+      color:  black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-family: Goudy Stout;
+      font-weight: normal;
+    }
+
+    .header #h1_2 {
+      text-align: center;	
+      font-size: 70px;
+      color:  black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-family: Goudy Stout;
+      font-weight: normal;
+    }
+    
+    .header #p1 {
+      text-align: center;
+      font-size: 25px;
+      color: #cc0066;
+      font-family: Palatino Linotype;
+    }
+
+#h2_1{
+	text-align: center;
+	font-size: 35px;
+	color: black;
+	background-color: #ffcce6;
+}
+
+#h2_3{
+	text-align: center;
+	font-size: 35px;
+	color: #cc0066;
+}
+
+
+#p1{
+	text-align: center;
+}
+
+#p2{
+	font-size: 23px;
+	font-family: ;
+	text-align: justify;
+	text-indent: 70px;
+}
+
+#p4{
+	font-size: 23px;
+	font-family: ;
+	text-align: justify;
+	text-indent: 70px;
+}
+
+#p3{
+	text-align: center;
+	font-size: 30px;
+	color: #cc0066 ;
+}
+
+#p4{
+	text-align: justify;
+	font-size: 25px;
+}
+
+
+.div.gallery {
+  border: 1px solid #ccc;
+}
+
+.div.gallery:hover {
+  border: 1px solid #777;
+}
+
+.div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex-container_1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cc0066;
+}
+
+.flex-container_1 > div {
+  background-color: #f1f1f1;
+  width: 310px;
+  height: 370px;
+  margin: 16px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.footer{
+	background-color: #b30059;
+	color: white;
+}
+
+.flex-container_foot {
+  display: flex;
+  justify-content: leftr;
+  background-color: #b30059;
+  width: 75%
+}
+
+.flex-container_foot > div {
+  background-color: #b30059;
+  width: 80px;
+  margin: 15px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container_0 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#009999;
+}
+
+.flex-container_0 > div {
+  background-color:#009999;
+  width: 340px;
+  height: 360px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+/*form*/
+.container_form{
+  position: relative;
+  width: 90%;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 180px;
+  font-size: 20px;
+}
+
+img#img_form { 
+  width: 80%;
+  height: auto;
+  opacity: 0.3;
+}
+
+
+
+/*dark_mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
+  #h1_1{color: white;}
+  #h1_2{color: white;}
+  #dm1{color: black;}
+  #mySidebar{color: black;}
+  #p1{color: #ffe6f2}
+}
+
+
+
+/*magnify myimage*/
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 250px;
+  height: 250px;
+}
+
+hr.new {
+  border: 1px solid #b30059;
+}
+
+hr.new1 {
+  border: 2px solid #ffe6f2;
+}
+
+
+/*smooth scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+ 
+ /*zoom image*/ 
+.zoom {
+  padding:0;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/*
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*/
+
+/*read more*/
+#more {display: none;}
+
+
+/*video*/
+#myVideo {
+  position: center;
+  right: 0;
+  bottom: 0;
+  min-width: 100; 
+  min-height: 100;
+}
+
+#myBtn2 {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn2:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/*slide show*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Art Of Quilling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="quil_style.css">
+  <link rel="stylesheet" type="text/css" href="w3Source.css">
+  <script src="my_jscript.js"></script>
+</head>
+
+
+<body>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  
+  <a href="#section_home" class="w3-bar-item w3-button">Home</a>
+  <br>
+
+  <a href="#section1" class="w3-bar-item w3-button">Introducction</a>
+  <br>
+
+  <a href="#section1_1" class="w3-bar-item w3-button">History</a>
+  <br>
+
+  <a href="#section3" class="w3-bar-item w3-button">How To Do</a>
+  <br>
+
+  <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button" style="font-size:20px;">Techniques <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="#section2_1" class="w3-bar-item w3-button w3-mobile">Quilling Tools</a>
+        <a href="#section2_2" class="w3-bar-item w3-button w3-mobile">Quilling Shapes</a>
+      </div>
+  </div>
+  <br><br><br><br><br>
+
+  <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button" style="font-size:20px;" >Quilling Projects <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="#section4_1" class="w3-bar-item w3-button w3-mobile">Quilling Wall Art</a>
+        <a href="#section4_2" class="w3-bar-item w3-button w3-mobile">Quilling 3D Miniatures</a>
+        <a href="#section4_3" class="w3-bar-item w3-button w3-mobile">Quilling Greating Cards</a>
+        <a href="#section4_4" class="w3-bar-item w3-button w3-mobile">Quilling jewlery</a>
+        <a href="#section4_5" class="w3-bar-item w3-button w3-mobile">Quilling Home Decor</a>
+      </div>
+  </div>
+
+</div>
+
+
+<!--navigation bar-->
+<ul class="topnav">
+  <li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="22.jpg" height="58px" width="60px" alt="logo of quilling">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a></li>
+  <button onclick="myFunction()" style="height:56px; background-color: white; color: #e60073;" class="w3-button w3-black w3-round-large"><b>Dark<br>Mode</b></button>
+  <li><a href="#section5">About Us</a></li>
+  <li><a href="#section4">Quilling Projects</a></li>
+  <li><a href="#section3">How To Do</a></li>
+  <li><a href="#section2">Techniques</a></li>
+  <li><a href="#section1">Introduction</a></li>
+  <li><a href="#section_home">Home</a></li>
+  <li  style="float: left;"><button class="w3-button w3-pink w3-xlarge" onclick="w3_open()">☰</button></li>
+</ul>
+
+
+<!--home section-->
+<div id="section_home">
+<div class="flex-container_home">
+
+  <div class="main-row" width="40%">
+
+    <div class="column">
+      <img src="first2.jpg"; width="700"; height="700">
+    </div>
+
+    <div class="column" width="60%" id="column_r">
+
+    	<div class="header">
+        <br><br><br><br><br>
+ 			  <h1 id="h1_1" class="small">PAPER&nbsp;</h1>
+        <h1 id="h1_2">QUILLING&nbsp;</h1><br>
+			  <p id="p1"><marquee direction="left" scrollamount="10" width="510"><i><b>Let's Listen the Songs Of Papers... It's Amaizing..!!&nbsp;&nbsp;&nbsp;</b></i></marquee></p>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<center><div style="width: 96%;">
+
+<!--starting of further sections-->
+
+<div id="section1">
+  <p>&nbsp;</p><br>
+  <h2 id="h2_1">Introduction</h2><br>
+
+
+  <!--<marquee direction="right" scrollamount="10" >
+    <div class="flex-container_0">
+      <div><img src="3d8.jpg" width="310px" height="350px"></div>
+      <div><img src="o.jpg" width="310px" height="350px"></div>
+      <div><img src="slide2.jpg" width="330px" height="350px"></div> 
+      <div><img src="tiger.jpg" width="330px" height="350px"></div>
+    </div>
+  </marquee><br><br>-->
+
+
+  <!--image slider -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="k8.jpg" alt="an image of image slider." style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="k4.jpg" alt="an image of image slider." style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="k3.jpg" alt="an image of image slider." style="width:100%">
+  </div>
+
+
+  <div class="mySlides fade">
+    <img src="ho4.jpg" alt="an image of image slider." style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="k1.jpg" alt="an image of image slider." style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+  <p id="p2">In a world where colors danced on the tips of fingers and imagination took flight, there was an art form unlike any other. It was the art of paper quilling, where thin strips of paper became vessels for creativity and self-expression.In the hands of an artist, a blank canvas transformed into a realm of possibilities. The artist would delicately select vibrant paper strips, each one holding a promise of beauty. With nimble fingers and a steady touch, they would roll the paper, coaxing it into intricate coils and graceful scrolls.<br><br>As the quilled shapes multiplied, a tapestry of color and form emerged. The artist would carefully arrange the quilled elements, harmonizing them into a symphony of shapes and patterns. Flowers bloomed, their petals unfolding with grace and elegance. Butterflies took flight, their delicate wings unfurling in a dance with the air. Landscapes materialized, capturing the essence of nature's beauty in the delicate curves of paper.But paper quilling was not just about the final product; it was a journey of discovery. It required patience, as each coil was meticulously shaped and placed, and perseverance, as mistakes were turned into opportunities for innovation.<span id="dots">...</span><span id="more"> <br><br> When the quilling masterpiece was complete, it radiated with a unique aura. It whispered stories of dedication and passion, inviting viewers to explore its intricate details. Each quilled creation was a testament to the human capacity for transformation, turning ordinary materials into extraordinary works of art.In the hands of an artist, paper quilling became an enchanting dance, a dance that breathed life into paper, that weaved dreams into reality, and that reminded us of the extraordinary beauty that could be found in the simplest of materials.</span><button onclick="FunctionRead()" id="myBtn" style="height:35px; width: 100px; background-color:#ffe6f2; color: black;">Read more</button> </p>
+
+
+
+  <div id="section1_1">
+  <p>&nbsp;</p><br>
+  <h2 id="h2_3">History</h2>
+  <center><iframe src="History.pdf#toolbar=0" width="80%" height="450px"></iframe></center><br><br>
+  </div>
+</div>
+
+
+
+<div id="section2">
+  <p>&nbsp;</p><br>
+  <h2 id="h2_1">Techniques</h2><br>
+
+  <p id="p2">Quilling, the art of creating designs from rolled, shaped and glued strips of paper, is an extremely popular craft at the moment. The design possibilities are endless and can be achieved with just a few basic quilling tools. Once you have your basic paper quilling tools you’ll be able to achieve hundreds of unique patterns and designs that you can use on cards and home decor projects. As well as your quilling papers, which come in a huge variety of colours and various widths, you only need a quilling tool, glue, scissors, tweezers and a quilling board to get you started. As well as ther are so many advancsed quilling tools. You’re likely to have some of these in your craft stash already.</p>
+
+
+  <div id="section2_1">
+  <p>&nbsp;</p>
+  <h2 id="h2_3">Paper Quilling Tools</h2>
+  <br><br>
+
+      <div id="dm1" class="responsive" style="background-color: #ffe6f2;">
+        <div class="gallery"><br>
+          <a target="_blank" href="tool1.jpg">
+            <img src="tool1.jpg" alt="Slotted tool" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; font-size: 20px; width: 90%; height: 300px;"><br><center><b>Slotted tool</center></b><br>
+      The slotted tool is  the most important quilling tool as it makes curling coils much easier and faster. Bird feather quills can be used as slotted tools, and this is where the word 'quilling' comes from.The quality of the coil is noticeably higher compared to a coil that was curled with a toothpick or hand. </div>
+        </div>
+      </div>
+
+
+      <div class="responsive" >
+        <div class="gallery"><br>
+          <a target="_blank" href="needle1.jpg">
+            <img src="needle1.jpg" alt="Needle tool" width="270" height="370" class="w3-hover-opacity">
+          </a>
+      <div class="desc" style="text-align: justify; width: 80%; font-size: 20px; height: 300px;" ><br><center><b>Needle tool</center></b><br>
+      The needle tool plays a supporting role in the craft. It is used primarily to apply glue to hard-to-reach areas of the coil or quilling design.</div>
+        </div>
+      </div>
+
+
+      <div id="dm1" class="responsive" style="background-color: #ffe6f2;">
+        <div class="gallery"><br>
+          <a target="_blank" href="tool4.jpg">
+            <img src="tool4.jpg" alt="Forest" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; width: 80%; font-size: 20px; height: 300px;"><br><center><b>Tweezers</center></b><br>
+      Tweezers are used to make delicate coils to prevent warping and unraveling. They keep the coils the same size which is important when making something with duplicate coils, like flower petals. Tweezers are also helpful in inserting paper in tight spaces.</div>
+        </div>
+      </div>
+
+
+      <div class="responsive" >
+        <div class="gallery"><br>
+          <a target="_blank" href="tool5.jpg">
+            <img src="tool5.jpg" alt="Forest" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; width: 80%; font-size: 20px; height: 300px;"><br><center><b>Crimper tool</center></b><br>
+      This tool is used to make crimped quilling strips. It helps to create different patterns. it is used to curl the sheets.</div>
+        </div>
+      </div>
+      <br>
+
+
+      <hr class="new1"><br><br>
+
+
+      <div class="responsive">
+        <div class="gallery"><br>
+          <a target="_blank" href="border buddy.jpg">
+            <img src="border buddy.jpg" alt="Border Buddy" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; font-size: 20px; width: 90%; height: 270px;"><br><center><b>Border Buddy</center></b><br>
+      Create perfect borders and shapes for your quilled designs. Contains the square, circle and triangle border buddy with an interchangeable handle.
+          </div>
+        </div>
+      </div>
+
+
+      <div id="dm1" class="responsive"style="background-color:#ffe6f2;">
+        <div class="gallery"><br>
+          <a target="_blank" href="ppr.jpg">
+            <img src="ppr.jpg" alt="paper strips" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; font-size: 20px; width: 90%; height: 270px;"><br><center><b>Quilling papers</center></b><br>
+      Quilling paper is one of the most important materials you'll need when it comes to quilling. There's a huge range of them on the market and you can choose whatever colour suits your crafting theme. These quilling papers come in 36 colours so are ideal for someone starting out in quilling. </div>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery"><br>
+          <a target="_blank" href="tool.jpg">
+            <img src="tool.jpg" alt="Paper Cutter" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; font-size: 20px; width: 90%; height: 270px;"><br><center><b>Paper Strip Cutter</center></b><br>
+      We can easily cut the paper strips that are in same width by using this tool. It only takes three or five minutes to cutiin a large number of paper strips. </div>
+        </div>
+      </div>
+
+
+      <div id="dm1" class="responsive" style="background-color: #ffe6f2;">
+        <div class="gallery"><br>
+          <a target="_blank" href="z.jpg">
+            <img src="z.jpg" alt="Quilling board" width="270" height="370" class="w3-hover-opacity">
+          </a>
+          <div class="desc" style="text-align: justify; font-size: 20px; width: 90%; height: 270px;"><br><center><b>Quilling Board</center></b><br>
+      This quilling board has a cork backing to allow you to pin quilled shapes into place while allowing the glue to dry. Simply coil a paper strip and place into one of the plastic moulds or use the larger cork work surface to create quilled designs.</div>
+        </div>
+      </div>
+  </div>
+    
+  <hr class="new1">
+
+
+  <div id="section2_2">
+  <p>&nbsp;</p>
+  <h2 id="h2_3">Basic Shapes of Quilling</h2>
+  <br>
+  <p id="p2">Paper quilling is an amazing and fun art of making beautiful shapes and patterns using paper strips. You can make many projects using basic quilling shapes. Paper strips are rolled, coiled, and shaped to create the pattern. It is a versatile craft with minimum requirements. All you need is a few supplies and lots of creativity. A quilling or paper filigree is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. </p><br>
+
+    <div class="img-magnifier-container">
+      <img src="shapes.jpg" id="myimage" alt="Basic Quilling Shapes" width="70%"><br>
+    </div>
+
+  </div>
+</div>
+<br>
+
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage", 3);
+</script>
+
+
+
+<div id="section3">
+    <p>&nbsp;</p><br>
+    <h2 id="h2_1">How To Do</h2><br>
+    <p id="p2">You can quickly roll up a greeting card or spend hundreds of hours manipulating pieces of paper into intricate paper mosaics or sculpture. How you use the craft and what you make is up to you and how much time you want to spend (and perhaps how much patience you have), but the overall concept always begins with the same thing: rolled paper shapes.<br>For beginners, I recommend using 1/4″ wide quilling paper. The wider width gives you more to grip and it is easier to manipulate. Once you have the shapes mastered, you will find it much easier to quill with narrower strips if you wish. Let's see how to make open and closed coils.Simple circles are the first shapes you’ll learn, as they are the base for most other shapes you’ll create.</p>
+
+    <p id="p3"><i><b>Step 01</b></i></p>
+    <p id="p4">To begin, insert a piece of quilling paper into the slot of your quilling tool. Try to get the edge of the paper and the edge of the slot to line up as perfectly as you can. Using a slotted tool will naturally leave a small crimp in the center of your coil, but if you allow the paper to hang over the edge of the tool, the crimp will be much more visible.</p>
+    <img src="1.jpg" width="500px" height="250px">
+
+    <p id="p3"><i><b>Step 02</b></i></p>
+    <p id="p4">Roll the tool with your dominant hand either towards your body or away from it; whichever feels most comfortable to you. Hold the strip taught with your other hand.</p>
+    <img src="2.jpg" width="500px" height="250px">
+
+
+    <p id="p3"><i><b>Step 03</b></i></p>
+    <p id="p4">To make a closed coil, as you near the end of the strip, place a small amount of glue near the end of the strip and roll to complete. When you remove it from the tool, do not allow it to expand — that’s what keeps it tight.</p>
+    <img src="3.jpg" width="500px" height="250px">
+
+    <p id="p3"><i><b>Step 04</b></i></p>
+    <p id="p4">To make an open coil, remove the coil from the tool and allow the coil to expand. Once it has fully expanded, add the dab of glue and press the strip down carefully to secure.</p>
+    <img src="4.jpg" width="500px" height="250px">
+
+    <p id="p3"><i><b>Step 05</b></i></p>
+    <p id="p4">Now you can adjust these coil to any shape as your choice creativly.</p>
+    <img src="5.jpg" width="500px" height="250px">
+    <br><br><br>
+
+
+    <p id="p3"><i><b>Progress of an art...</b></i></p>
+    <table>
+      <tr>
+        <td><br><img src="p1.jpg" alt="part 1" height="400px" width="460px"><br><br></td>
+        <td><br><img src="p2.jpg" alt="part 2" height="400px" width="460px"><br><br></td>
+        <td><br><img src="p3.jpg" alt="part 3" height="400px" width="460px"><br><br></td>
+      </tr>
+    </table>
+
+</div>
+
+
+
+<div id="section4">
+  <p>&nbsp;</p><br>
+  <h2 id="h2_1">Quilling Projects</h2>
+
+
+
+    <!-- The video -->
+
+  <div id="video_div" style="width:100%; background:#ffe6f2;">
+    <video autoplay muted loop id="myVideo" height="500" width="100%">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn2" onclick="samplevideo()">Pause</button>
+    </div>
+  </div>
+
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn2");
+
+    function samplevideo() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+  <div id="section4_1">
+  <p>&nbsp;</p><br>
+  <!--<p id="p3"><i><b>Quilling Wall Art</b></i></p>-->
+  <h2 id="h2_3"><i>Quilling Wall Art</i></h2>
+  <p id="p4">Quilling designs for wall art involve creating decorative pieces that can be framed or directly mounted on walls. These designs often feature intricate patterns, shapes, and motifs, such as flowers, animals, landscapes, or abstract compositions.</p><br>
+
+  <div class="flex-container_1" style="width:95%;">
+    <div  class="zoom"><img src="d.jpg" width="310px" height="370px"></div>
+    <div  class="zoom"><img src="o.jpg" width="310px" height="370px"></div>
+    <div  class="zoom"><img src="e.jpg" width="310px" height="370px"></div>  
+    <div  class="zoom"><img src="h.jpg" width="310px" height="370px"></div>
+    <div  class="zoom"><img src="a.jpg" width="310px" height="370px"></div>
+    <div  class="zoom"><img src="t.jpg" width="310px" height="370px"></div>  
+    <div  class="zoom"><img src="slide2.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="l.jpg" width="310px" height="370px"></div>
+  </div><br>
+  </div>
+
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" >
+  </div>
+  </div>
+
+
+  <div id="section4_2">
+  <p>&nbsp;</p><br>
+  <!--<p id="p3"><i><b>Quilling 3D miniatures</b></i></p>-->
+  <h2 id="h2_3"><i>Quilling 3D miniatures</i></h2>
+  <p id="p4"> Quilling 3D miniatures require more advanced techniques compared to traditional flat quilling designs. The artist uses a combination of rolling, shaping, and layering techniques to build up the miniature object. It involves creating individual quilled components, such as coils, scrolls, teardrops, or petals, and assembling them together to form the final three-dimensional shape.<br>Creating quilling 3D miniatures requires patience, precision, and a strong understanding of quilling techniques. It is a challenging but rewarding form of quilling that allows artists to push the boundaries of their creativity and produce stunning, intricate pieces of art.</p><br>
+
+  <div class="flex-container_1" style="width:95%;">
+    <div><img src="3d8.jpg" width="310px" height="370px"></div>
+    <div><img src="3d6.jpg" width="310px" height="370px"></div>
+    <div><img src="3d4.jpg" width="310px" height="370px"></div>
+    <div><img src="3d5.jpg" width="310px" height="370px"></div>
+    <div><img src="3d1.jpg" width="310px" height="370px"></div>
+    <div><img src="3d2.jpg" width="310px" height="370px"></div> 
+    <div><img src="3d7.jpg" width="310px" height="370px"></div>
+    <div><img src="3d3.jpg" width="310px" height="370px"></div>
+  </div><br>
+  </div>
+
+  <div id="section4_3">
+  <p>&nbsp;</p><br> 
+  <!--<p id="p3"><i><b>Quilling Greeting Cards</b></i></p>-->
+  <h2 id="h2_3"><i>Quilling Greeting Cards</i></h2>
+  <p id="p4"> Quilling is popular for making personalized greeting cards. It allows for the creation of three-dimensional designs, adding depth and texture to the cards. Quilled greeting cards often feature flowers, butterflies, hearts, or other shapes that can be customized for different occasions, such as birthdays, weddings, or holidays.</p><br>
+
+  <div class="flex-container_1" style="width:95%;">
+    <div><img src="gc8.jpg" width="310px" height="370px"></div>
+    <div><img src="gc6.jpg" width="310px" height="370px"></div>
+    <div><img src="gc1.jpg" width="310px" height="370px"></div> 
+    <div><img src="gc5.jpg" width="310px" height="370px"></div>
+    <div><img src="gc7.jpg" width="310px" height="370px"></div>
+    <div><img src="gc3.jpg" width="310px" height="370px"></div> 
+    <div><img src="gc2.jpg" width="310px" height="370px"></div>
+    <div><img src="gc4.jpg" width="310px" height="370px"></div>
+  </div><br>
+  </div>
+
+  <div id="section4_4">
+  <p>&nbsp;</p><br>
+  <!--<p id="p3"><i><b>Quilling Accessories</b></i></p>-->
+  <h2 id="h2_3"><i>Quilling Accessories</i></h2>
+  <p id="p4"> Quilling can be used to create unique and delicate Accessories. These can include earrings, pendants, necklaces, bracelets,rings brooches, and keychains. These designs often showcase intricate patterns and vibrant colors, allowing individuals to express their personal style through wearable art.The paper strips are shaped into intricate coils, scrolls, or other designs and then coated or sealed to add durability.</p><br>
+
+  <div class="flex-container_1" style="width:95%;">
+    <div class="zoom"><img src="ss.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="mm.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="y.jpg" width="310px" height="370px"></div> 
+    <div class="zoom"><img src="i.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="s.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="yy.jpg" width="310px" height="370px"></div> 
+    <div class="zoom"><img src="g.jpg" width="310px" height="370px"></div>
+    <div class="zoom"><img src="nn.jpg" width="310px" height="370px"></div>
+  </div><br>
+  </div>
+
+  <div id="section4_5">
+  <p>&nbsp;</p><br>
+  <!--<p id="p3"><i><b>Quilling Home Decor</b></i></p>-->
+  <h2 id="h2_3"><i>Quilling Home Decor</i></h2>
+  <p id="p4"> Quilling designs can be used to enhance home decor items such as photo frames, mirrors, lampshades, and decorative boxes. These designs can be tailored to match specific themes or color schemes, providing a unique and personalized touch to interior spaces.</p><br>
+
+  <div class="flex-container_1" style="width:95%;">
+    <div><img src="ho8.jpg" width="310px" height="370px"></div>
+    <div><img src="ho6.jpg" width="310px" height="370px"></div>
+    <div><img src="ho4.jpg" width="310px" height="370px"></div> 
+    <div><img src="ho5.jpg" width="310px" height="370px"></div>
+    <div><img src="ho1.jpg" width="310px" height="370px"></div>
+    <div><img src="ho2.jpg" width="310px" height="370px"></div> 
+    <div><img src="ho7.jpg" width="310px" height="370px"></div>
+    <div><img src="ho3.jpg" width="310px" height="370px"></div>
+  </div>
+  </div>
+
+</div>
+<br><br><br>
+<hr class="new">
+<br><br><br>
+<div class="container_form">
+  <img src="back1.jpg" id="img_form" style="width: 75%;">
+    <div class="topleft" style=" width:94%;">
+      <br>
+
+      <h2>Subscribe Our Monthly Quilling Magazine...</h2><br>
+
+      <form name="f1" action="f1.php" onsubmit="return validateForm()" method="post" style="text-align:left;">
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="First-Name">First Name:</label>
+        <input type="text" name="First-Name" ><br><br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="Last-Name">Last Name:</label>
+        <input type="text" name="Last-Name" ><br><br><br>
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="bdate">Date of Birth:</label>
+        <input type="date" id="bdate" name="bdate" required><br><br><br>
+
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="contact-number">WhatsApp:</label>
+        <input type="tel" name="contact-number" maxlength="10" minlength="10" placeholder="&nbsp;&nbsp;Optional" ><br><br><br>
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="email">Email:</label>
+        <input type="email" name="email" ><br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Subscribe" style="font-size:18px;"><br><br>
+      </form>
+      <br><br>
+
+    </div><br>
+</div>
+
+
+
+<div id="section5">
+  <p>&nbsp;</p><br>
+  <h2 id="h2_1">About Us</h2><br>
+  <p id="p2">Hi friends! I'm Quilling Happy Cat and this is my Paper Quilling web site. I am really interested in the art of paper quilling. So I was starting collect quilling items and the images of quilling items when I were a high school student. However within the time making paper quilling become a hobby of mine.So I decided to create a webpage about the art of paper quilling. For those who are following this website, can get a good knowledge and high level atttraction about paper quilling.
+  <br>So, if you want get the more information about quilling please don't hesitate to contact me. I will help you with the best of my experiences and I also can cordinate you with my friends who are expering in paper quilling.</p>
+  <center><p style="font-size: 28px; color: #cc0066;"><i>Happy Quilling..!!</i></p></center>
+</div>
+<br><br>
+
+
+
+</div></center>
+
+
+
+<div class="footer">
+  <br>
+  <center><p>&copy; ICT_4961 Paper Quilling Website. All rights reserved.</p></center>
+
+  <div class="contact-info">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: quilling4961@gmail.com</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WhatsApp: 071-2266330</p>
+  </div><br>
+
+  <div class="flex-container_foot">
+    <div></div>
+    <div><a href=""><img src="fb.png" width="50px" height="50px"></a></div>
+    <div><a href=""><img src="ytube.png" width="50px" height="50px"></a></div>
+    <div><a href=""><img src="prest.png" width="50px" height="50px"></a></div>
+    <div><a href=""><img src="g.png" width="50px" height="50px"></a></div>
+  </div>
+ 
+</div>
+
+
+</body>
+
+
+
