@@ -2,9 +2,10 @@
 <html>
 
 <head>
-	<title>Art Of Quilling</title>
+  <title>Art Of Quilling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="quil_style.css">
+  <link rel="icon" type="image/x-icon" href="22.jpg">
+  <link rel="stylesheet" type="text/css" href="quil_style.css">
   <link rel="stylesheet" type="text/css" href="w3Source.css">
   <script src="my_jscript.js"></script>
 </head>
@@ -55,6 +56,11 @@
 <!--navigation bar-->
 <ul class="topnav">
   <li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="22.jpg" height="58px" width="60px" alt="logo of quilling">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a></li>
+
+  <button class="w3-button w3-pink w3-xlarge" onclick="w3_open()">☰</button>
+
+  <a href="login.html" style="height:56px; color:#cc0066;"><b>Login </b></a>
+
   <button onclick="myFunction()" style="height:56px; background-color: white; color: #e60073;" class="w3-button w3-black w3-round-large"><b>Dark<br>Mode</b></button>
   <li><a href="#section5">About Us</a></li>
   <li><a href="#section4">Quilling Projects</a></li>
@@ -62,7 +68,7 @@
   <li><a href="#section2">Techniques</a></li>
   <li><a href="#section1">Introduction</a></li>
   <li><a href="#section_home">Home</a></li>
-  <li  style="float: left;"><button class="w3-button w3-pink w3-xlarge" onclick="w3_open()">☰</button></li>
+  <!--<li  style="float: left;"><button class="w3-button w3-pink w3-xlarge" onclick="w3_open()">☰</button></li>-->
 </ul>
 
 
@@ -78,12 +84,12 @@
 
     <div class="column" width="60%" id="column_r">
 
-    	<div class="header">
+      <div class="header">
         <br><br><br><br><br>
- 			  <h1 id="h1_1" class="small">PAPER&nbsp;</h1>
+        <h1 id="h1_1" class="small">PAPER&nbsp;</h1>
         <h1 id="h1_2">QUILLING&nbsp;</h1><br>
-			  <p id="p1"><marquee direction="left" scrollamount="10" width="510"><i><b>Let's Listen the Songs Of Papers... It's Amaizing..!!&nbsp;&nbsp;&nbsp;</b></i></marquee></p>
-		</div>
+        <p id="p1"><marquee direction="left" scrollamount="10" width="510"><i><b>Let's Listen the Songs Of Papers... It's Amaizing..!!&nbsp;&nbsp;&nbsp;</b></i></marquee></p>
+    </div>
     </div>
   </div>
 </div>
@@ -296,7 +302,7 @@ function showSlides() {
   <p id="p2">Paper quilling is an amazing and fun art of making beautiful shapes and patterns using paper strips. You can make many projects using basic quilling shapes. Paper strips are rolled, coiled, and shaped to create the pattern. It is a versatile craft with minimum requirements. All you need is a few supplies and lots of creativity. A quilling or paper filigree is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. </p><br>
 
     <div class="img-magnifier-container">
-      <img src="shapes.jpg" id="myimage" alt="Basic Quilling Shapes" width="70%"><br>
+      <img src="shapes.jpg" id="myimage" alt="Basic Quilling Shapes" width="80%"><br>
     </div>
 
   </div>
@@ -499,12 +505,8 @@ magnify("myimage", 3);
       <form name="f1" action="f1.php" onsubmit="return validateForm()" method="post" style="text-align:left;">
         
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="First-Name">First Name:</label>
-        <input type="text" name="First-Name" ><br><br><br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="Last-Name">Last Name:</label>
-        <input type="text" name="Last-Name" ><br><br><br>
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" ><br><br><br>
 
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -520,6 +522,11 @@ magnify("myimage", 3);
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <label for="email">Email:</label>
         <input type="email" name="email" ><br><br><br>
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="comments">Comments:</label>
+        <textarea name="comments" rows="3" cols="50"></textarea><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
         
